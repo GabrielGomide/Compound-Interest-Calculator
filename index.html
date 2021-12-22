@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Compound interest calculator</title>
+        <script src='index.js'></script>
+        <link rel='stylesheet' href='index.css'>
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h1>Compound Interest Calculator</h1>
+        <div id='inputs'>
+            Initial value: <input type='text' id='initial_value' onkeypress="is_real(event)" placeholder="0.00"><br>
+            Monthly value: <input type='text' id='monthly_value' onkeypress="is_real(event)" placeholder="0.00"><br>
+            Interest:
+            <select id='interest_time' onchange='changed_interest_time()'>
+                <option selected>Annual</option>
+                <option>Monthly</option>
+            </select>
+            <input type='text' id='interest' onkeypress="is_real(event)" placeholder="8"><br>
+            Time:
+            <select id='investment_time' onchange='changed_investment_time()'>
+                <option selected>Years</option>
+                <option>Months</option>
+            </select>
+            <input type='text' id='time' onkeypress="is_integer(event)" placeholder="30"><br>
+            <input type='button' id='calculate' onclick="calculate_compound_interest(event)" value='Calculate compound interest'>
+        </div>
+
+        <div id='results'>
+            <div id='total_value'>
+                <p>Total final value:</p>
+                <p id='value'>$0.00</p>
+            </div>
+            <div id='invested_value'>
+                <p>Total invested value:</p>
+                <p id='value'>$0.00</p>
+            </div>
+            <div id='interest_value'>
+                <p>Total in interest:</p>
+                <p id='value'>$0.00</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+

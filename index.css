@@ -1,0 +1,73 @@
+html {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ededed;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1178d8;
+}
+
+#inputs {
+    display: inline-block;
+    background-color: #b1d2ff;
+    padding: 1%;
+    border-radius: 2.5%;
+    min-width: 650px;
+    max-width: 90%;;
+}
+
+input {
+    margin: 2%;
+    padding: 1%;
+    border-radius: 5px;
+    border: 2px solid #777777;
+    padding: 2%;
+}
+
+#calculate {
+    background-color: #34537e;
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#total_value, #invested_value, #interest_value {
+    background-color: #b1d2ff;
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-radius: 5px;
+    border: 0px;
+    display: inline-block;
+    margin: 1%;
+}
+
+#value {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#total_value #value {
+    color: grey;
+}
+
+#invested_value #value {
+    color: blue;
+}
+
+#interest_value #value {
+    color: green;
+}
+
+select {
+    padding: 1%;
+    color: blue;
+    border: 1px solid blue;
+    background-color: white;
+    font-size: 100%;
+    border-radius: 5px;
+}
