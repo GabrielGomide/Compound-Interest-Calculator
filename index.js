@@ -17,14 +17,12 @@ function changed_interest_time() {
     if (document.getElementById('interest').value) {
         if (interest_time == 'Annual') {
             new_interest = (Math.pow((1 + (interest / 100)), 12) - 1) * 100;
-            if (Math.round(new_interest) != new_interest) {
-                new_interest = Math.round(new_interest * 100) / 100;
-            }
         } else if (interest_time == 'Monthly') {
             new_interest = (Math.pow((1 + (interest / 100)), (1 / 12)) - 1) * 100;
-            if (Math.round(new_interest) != new_interest) {
-                new_interest = Math.round(new_interest * 100) / 100;
-            }
+        }
+        
+        if (Math.round(new_interest) != new_interest) {
+            new_interest = Math.round(new_interest * 100) / 100;
         }
 
         document.getElementById('interest').value = String(new_interest);
